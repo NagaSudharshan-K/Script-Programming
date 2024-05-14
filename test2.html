@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<table id="t">
+<tr><td>Blue
+</td></tr>
+<tr><td>Yellow</td></tr>
+<tr><td>Red</td></tr>
+</table>
+<div>
+<p>hello</p>
+<p>hi</p>
+<p>del</p>
+</div>
+</body>
+<script>
+//alert(document.getElementById("t").firstChild)
+//alert(document.getElementById("t").children.length)
+document.getElementsByTagName("table")[0].setAttribute("style","border:'2'")
+document.getElementsByTagName("p")[0].setAttribute("style","color:blue")
+var len=document.getElementsByTagName("div")[0].children.length
+for(var i=0;i<len;i++)
+{
+	document.getElementsByTagName("div")[0].removeChild(document.getElementsByTagName("div")[0].children[i])
+}
+//for i in document.getElementsByTagName("table")[0].children
+</script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+</head>
+<body>
+<button id="display">Display</button>
+<br>
+<p id="para"></p>
+</body>
+<script type = "text/javascript">
+var stu = new Array();
+var n = parseInt(window.prompt("Enter n:","1"));
+var counter=0;var mark;
+while(counter<n)
+{
+stu[counter]= parseInt(window.prompt("Enter mark of student:"));
+counter++;
+}
+document.getElementById("display").addEventListener("click",fun,false);
+function fun()
+{
+counter=0;
+var res="<table border='1'><tr><th>id</th><th>Marks</th></tr>";
+while(counter<n)
+{
+if(stu[counter] <34)
+{
+res+="<tr><td>"+counter+"</td><td style='background-color:red'>"+stu[counter]+"</td></tr>";
+}
+else
+{
+res+="<tr><td>"+counter+"</td><td style='background-color:green'>"+stu[counter]+"</td></tr>";
+}
+counter++;
+}
+res+="</table>"
+document.getElementById("para").innerHTML=res;
+}
+</script>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="test()">Remove</button>
+<ul id="myList">
+  <li>Machine learning</li>
+  <li>Deep learning</li>
+  <li>Data analytics</li>
+  <li>Script</li>
+</ul>
+<table border="2">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Pineapple</td>
+<td>Yello and green color</td>
+</tr>
+<tr>
+<td>Apple</td>
+<td>Red color</td>
+</tr>
+<tr>
+<td>Guava</td>
+<td>Green color</td>
+</tr>
+<tr>
+<td>Orange</td>
+<td>Orange color</td>
+</tr>
+
+<script>
+function test() {
+  var list = document.getElementById("myList");
+    
+	//var randomIndex = Math.floor(Math.random() * myList.children.length);
+	//list.removeChild(list.children[randomIndex]);
+    list.removeChild(list.firstChild);
+	//} 
+}
+</script>
+
+</body>
+</html>

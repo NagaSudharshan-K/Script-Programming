@@ -1,0 +1,48 @@
+<html> 
+<head> 
+<title> My page </title> 
+<script type="text/javascript"> 
+function myFunc() 
+{ 
+ /*alert(document.forms[1] ); 
+ alert(document.title);
+ alert(document.URL); 
+ alert(document.body);
+ alert(document.body.children); 
+ alert(document.images);
+ alert(document.images[0]);
+ alert("it is " +document.links);
+ alert("it is " +document.links[0]);
+ alert(document.forms[0].elements[1]); */
+ //var list = document.getElementsByTagName('div')[0].children;
+ var list = document.getElementsByTagName('div')[0].childNodes;
+ alert(list.length);
+ for(var i=0;i<list.length;i++)
+ {
+ alert("The child of div is "+list[i]);}
+ var x=document.body.children;
+ document.write("The length is "+x.length +"<br>");
+ for(var i=0;i<x.length;i++)
+ {
+ document.write("The ans is "+x[i] +"<br>");
+ }
+ } 
+</script> 
+</head> 
+<body> 
+<h1 id="title">This is main title</h1>
+<p>hello hai</p> 
+<form name="FirstForm"> 
+<input type="button" value="Click Me" onclick="myFunc();" /> 
+<input type="text"> 
+</form>
+<div>dfg
+<p>sdf</p>
+<a href="https://www.google.com">ffg</a>
+</div> 
+<table><tr><td>hello</td></tr></table>
+<a href="https://www.google.com">ffg</a>
+<img src="flower.jpg" alt="ttt"/>
+<img src="flower1.jpg" alt="sf"/>
+</body> 
+</html>
